@@ -5,6 +5,9 @@ const config = {...base};
 config.rules['unicorn/prefer-module'] = 'off';
 config.rules['import/namespace'] = 'off';
 config.rules['import/extensions'] = 'off';
+// TODO: See if this can be re-enabled without breaking browser builds
+// Browser support
+config.rules['unicorn/prefer-node-protocol'] = 'off';
 
 config.overrides ??= [];
 config.overrides.push(

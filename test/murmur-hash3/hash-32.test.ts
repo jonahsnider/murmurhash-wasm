@@ -1,4 +1,4 @@
-import {Buffer} from 'node:buffer';
+import {Buffer} from 'buffer';
 import {MurmurHash3} from '../../src/index';
 
 // Taken from https://stackoverflow.com/a/31929528/10808983

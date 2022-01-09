@@ -1,7 +1,7 @@
 /* eslint-disable no-bitwise */
 
-import assert from 'node:assert/strict';
-import {Buffer} from 'node:buffer';
+import assert from 'assert/strict';
+import {Buffer} from 'buffer';
 import {UINT32_MAX_VALUE} from '../constants';
 import {wasm} from '../wasm';
 
