@@ -6,10 +6,8 @@
 
 /// <reference types="node" />
 
-import { Buffer as Buffer_2 } from 'node:buffer';
-
 // @public
-function hash32(key: ArrayBufferLike, seed: number): Buffer_2;
+function hash32(key: ArrayBufferLike, seed: number): Buffer;
 
 declare namespace MurmurHash3 {
     export {

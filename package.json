@@ -1,12 +1,14 @@
 {
 	"name": "murmurhash-wasm",
 	"version": "0.0.0-development",
-	"description": "MurmurHash implementations in WASM",
+	"description": "MurmurHash in WASM for Node.js and the browser",
 	"keywords": [
 		"murmurhash",
 		"murmurhash3",
 		"crypto",
-		"wasm"
+		"wasm",
+		"hashing",
+		"hash"
 	],
 	"homepage": "https://murmurhash-wasm.jonah.pw",
 	"bugs": {
@@ -24,28 +26,36 @@
 	},
 	"sideEffects": false,
 	"type": "commonjs",
-	"exports": "./dist/src/index.js",
-	"main": "./dist/src/index.js",
-	"types": "./dist/src/index.d.ts",
+	"exports": {
+		"node": "./dist/node.cjs",
+		"default": "./dist/index.js",
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.js"
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"files": [
 		"dist",
-		"!dist/test",
-		"!dist/**/*.d.ts",
-		"dist/index.d.ts",
-		"wasm"
+		"wasm/mod.wat"
 	],
 	"scripts": {
 		"asbuild": "yarn asbuild:optimized",
 		"asbuild:optimized": "asc assembly/index.ts --target release",
 		"asbuild:untouched": "asc assembly/index.ts --target debug",
 		"prebuild": "rm -rf dist",
-		"build": "yarn run prebuild && tsc",
+		"build": "yarn build:esm && yarn build:cjs && yarn build:node",
+		"build:base": "esbuild --bundle --loader:.wasm=binary --external:@assemblyscript/loader src/index.ts --sourcemap=inline",
+		"build:cjs": "yarn run build:base --outfile=dist/index.js --format=cjs",
+		"build:esm": "yarn run build:base --outfile=dist/index.mjs --format=esm",
+		"build:node": "yarn run build:base --outfile=dist/node.cjs --format=cjs --target=node16.9.0 ",
 		"docs": "typedoc",
 		"lint": "xo",
 		"release": "semantic-release",
 		"style": "prettier --check .",
 		"test": "jest",
 		"test:coverage": "jest --coverage",
+		"pretypes": "rm -rf tsc_types",
+		"types": "tsc",
 		"validate-api": "api-extractor run",
 		"validate-api:local": "api-extractor run --local --verbose"
 	},
@@ -66,6 +76,7 @@
 		"assemblyscript": "0.19.22",
 		"babel-jest": "27.4.6",
 		"enhanced-resolve": "5.8.3",
+		"esbuild": "0.14.11",
 		"jest": "27.4.7",
 		"prettier": "2.5.1",
 		"semantic-release": "18.0.1",

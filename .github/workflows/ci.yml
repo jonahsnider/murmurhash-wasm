@@ -19,13 +19,6 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
-      - name: Build TypeScript
-        run: yarn run build
-      - name: Upload compiled TypeScript
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: dist
       - name: Build WASM
         run: yarn run asbuild
       - name: Upload compiled TypeScript
@@ -33,6 +26,20 @@ jobs:
         with:
           name: wasm
           path: wasm
+      - name: Bundle
+        run: yarn run build
+      - name: Upload bundle
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+      - name: Generate typings
+        run: yarn run types
+      - name: Upload typings
+        uses: actions/upload-artifact@v2
+        with:
+          name: types
+          path: tsc_types
   docs:
     name: Generate docs
 
@@ -49,7 +56,7 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
-      - name: Build TypeScript
+      - name: Generate docs
         run: yarn run docs
       - name: Upload compiled TypeScript
         uses: actions/upload-artifact@v2
@@ -134,8 +141,8 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
-      - name: Build TypeScript
-        run: yarn run build
+      - name: Generate typings
+        run: yarn run types
       - name: Validate API
         run: yarn run validate-api
   release:
@@ -162,12 +169,14 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
-      - name: Build TypeScript
-        run: yarn run build
-      - name: Generate .d.ts rollup
-        run: yarn run validate-api
       - name: Build WASM
         run: yarn run asbuild
+      - name: Build TypeScript
+        run: yarn run build
+      - name: Generate typings
+        run: yarn run types
+      - name: Generate .d.ts rollup
+        run: yarn run validate-api
       - name: Release
         run: yarn run release
         env:

@@ -1,7 +1,5 @@
 /* eslint-disable no-bitwise */
 
-import assert from 'assert/strict';
-import {Buffer} from 'buffer';
 import {UINT32_MAX_VALUE} from '../constants';
 import {wasm} from '../wasm';
 
@@ -31,11 +29,9 @@ import {wasm} from '../wasm';
  * @public
  */
 export function hash32(key: ArrayBufferLike, seed: number): Buffer {
-	assert.equal(
-		seed >= 0 && seed <= UINT32_MAX_VALUE,
-		true,
-		new RangeError(`The value of "value" is out of range. It must be >= 0 and <= ${UINT32_MAX_VALUE}.`),
-	);
+	if (seed < 0 || seed > UINT32_MAX_VALUE) {
+		throw new RangeError(`The value of "value" is out of range. It must be >= 0 and <= ${UINT32_MAX_VALUE}.`);
+	}
 
 	const keyPointer = wasm.__pin(wasm.__newArrayBuffer(key));
 

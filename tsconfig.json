@@ -1,12 +1,10 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"inlineSourceMap": true,
-		"inlineSources": true,
-		"module": "commonjs",
 		"moduleResolution": "node",
-		"outDir": "./dist"
+		"outDir": "./tsc_types",
+		"emitDeclarationOnly": true
 	},
 	"extends": "@tsconfig/node16",
-	"include": ["src", "test"]
+	"include": ["src", "test", "types"]
 }
