@@ -1,8 +1,8 @@
 # MurmurHash WASM
 
-[![Build Status](https://github.com/jonahsnider/murmurhash/workflows/CI/badge.svg)](https://github.com/jonahsnider/murmurhash/actions)
+[![Build Status](https://github.com/jonahsnider/murmurhash-wasm/workflows/CI/badge.svg)](https://github.com/jonahsnider/murmurhash-wasm/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![codecov](https://codecov.io/gh/jonahsnider/murmurhash/branch/main/graph/badge.svg)](https://codecov.io/jonahsnider/murmurhash)
+[![codecov](https://codecov.io/gh/jonahsnider/murmurhash-wasm/branch/main/graph/badge.svg)](https://codecov.io/jonahsnider/murmurhash-wasm)
 
 MurmurHash implementations in WASM.
 

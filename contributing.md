@@ -73,4 +73,4 @@ yarn run test:coverage
 ```
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/murmurhash).
+The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/murmurhash-wasm).

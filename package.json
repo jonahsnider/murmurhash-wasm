@@ -10,11 +10,11 @@
 	],
 	"homepage": "https://murmurhash-wasm.jonah.pw",
 	"bugs": {
-		"url": "https://github.com/jonahsnider/murmurhash/issues"
+		"url": "https://github.com/jonahsnider/murmurhash-wasm/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jonahsnider/murmurhash.git"
+		"url": "git+https://github.com/jonahsnider/murmurhash-wasm.git"
 	},
 	"license": "Apache-2.0",
 	"author": {
