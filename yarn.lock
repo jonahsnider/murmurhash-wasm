@@ -2239,7 +2239,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7, @types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
+"@types/babel__core@npm:7.1.18, @types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
   version: 7.1.18
   resolution: "@types/babel__core@npm:7.1.18"
   dependencies:
@@ -2261,7 +2261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__preset-env@npm:^7":
+"@types/babel__preset-env@npm:7.9.2":
   version: 7.9.2
   resolution: "@types/babel__preset-env@npm:7.9.2"
   checksum: a905ed92a3f602384966153e74a94790425e98af54e392a7fcfb5c5ded2f2a58c49a9fa64a0cb506fbffb8169ad25b56ea87983c812a4fb880f0716668c8c085
@@ -7441,8 +7441,8 @@ __metadata:
     "@jonahsnider/xo-config": 5.0.3
     "@microsoft/api-extractor": 7.19.4
     "@tsconfig/node16": 1.0.2
-    "@types/babel__core": ^7
-    "@types/babel__preset-env": ^7
+    "@types/babel__core": 7.1.18
+    "@types/babel__preset-env": 7.9.2
     "@types/jest": 27.4.0
     "@types/node": 16.9.6
     assemblyscript: 0.19.22
