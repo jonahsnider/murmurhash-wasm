@@ -65,7 +65,7 @@
 		"assemblyscript": "0.19.22",
 		"babel-jest": "27.4.6",
 		"enhanced-resolve": "5.8.3",
-		"jest": "27.4.6",
+		"jest": "27.4.7",
 		"prettier": "2.5.1",
 		"semantic-release": "18.0.1",
 		"ts-node": "10.4.0",
