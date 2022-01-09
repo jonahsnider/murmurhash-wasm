@@ -6,6 +6,8 @@
 
 MurmurHash implementations in WASM.
 
+Generated documentation is here: <https://murmurhash-wasm.jonah.pw>.
+
 ## Usage
 
 ### MurmurHash3

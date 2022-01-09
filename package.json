@@ -8,6 +8,7 @@
 		"crypto",
 		"wasm"
 	],
+	"homepage": "https://murmurhash-wasm.jonah.pw",
 	"bugs": {
 		"url": "https://github.com/jonahsnider/murmurhash/issues"
 	},
