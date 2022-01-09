@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"outDir": "tsc_output",
+		"resolveJsonModule": true,
+		"target": "esnext"
+	},
+	"exclude": ["node_modules", "coverage"],
+	"extends": "@tsconfig/node16",
+	"include": ["src", "test"]
+}
