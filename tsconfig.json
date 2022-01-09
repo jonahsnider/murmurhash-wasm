@@ -1,14 +1,12 @@
 {
 	"compilerOptions": {
+		"declaration": true,
 		"inlineSourceMap": true,
 		"inlineSources": true,
-		"module": "esnext",
+		"module": "commonjs",
 		"moduleResolution": "node",
-		"outDir": "tsc_output",
-		"resolveJsonModule": true,
-		"target": "esnext"
+		"outDir": "./dist"
 	},
-	"exclude": ["node_modules", "coverage"],
 	"extends": "@tsconfig/node16",
 	"include": ["src", "test"]
 }

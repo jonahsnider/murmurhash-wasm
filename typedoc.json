@@ -1,0 +1,5 @@
+{
+	"entryPoints": ["./src/index.ts"],
+	"githubPages": false,
+	"out": "docs_out"
+}

@@ -223,13 +223,24 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,visualstudiocode
 
 # TypeScript compiler output
-tsc_output
+/dist
 
 # Yarn
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+/.pnp.*
+/.yarn/*
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
+!/.yarn/versions
+
+# AssemblyScript
+/wasm/*.wasm
+/wasm/*.wasm.map
+/wasm/*.asm.js
+
+# API Extractor
+/temp
+
+# Generated documentation
+/docs_out

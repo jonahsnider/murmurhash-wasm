@@ -19,17 +19,48 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
-      - name: Build
+      - name: Build TypeScript
         run: yarn run build
       - name: Upload compiled TypeScript
         uses: actions/upload-artifact@v2
         with:
-          name: tsc_output
-          path: tsc_output
+          name: dist
+          path: dist
+      - name: Build WASM
+        run: yarn run asbuild
+      - name: Upload compiled TypeScript
+        uses: actions/upload-artifact@v2
+        with:
+          name: wasm
+          path: wasm
+  docs:
+    name: Generate docs
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Install dependencies with Yarn
+        run: yarn install --immutable
+      - name: Build TypeScript
+        run: yarn run docs
+      - name: Upload compiled TypeScript
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: docs_out
   lint:
     name: Lint
 
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - name: Checkout Git repository
@@ -85,3 +116,55 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage/lcov.info
           fail_ci_if_error: true
+  validate-api:
+    name: Validate API
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Install dependencies with Yarn
+        run: yarn install --immutable
+      - name: Build TypeScript
+        run: yarn run build
+      - name: Validate API
+        run: yarn run validate-api
+  release:
+    name: Release
+
+    needs:
+      - build
+      - docs
+      - lint
+      - style
+      - test
+      - validate-api
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Install dependencies with Yarn
+        run: yarn install --immutable
+      - name: Build TypeScript
+        run: yarn run build
+      - name: Generate .d.ts rollup
+        run: yarn run validate-api
+      - name: Build WASM
+        run: yarn run asbuild
+      - name: Release
+        run: yarn run release

@@ -1,0 +1,22 @@
+{
+	"options": {},
+	"targets": {
+		"debug": {
+			"binaryFile": "wasm/mod.wasm",
+			"debug": true,
+			"textFile": "wasm/mod.wat",
+			"exportRuntime": true,
+			"tsdFile": "src/types/wasm-raw.d.ts"
+		},
+		"release": {
+			"binaryFile": "wasm/mod.wasm",
+			"converge": true,
+			"noAssert": true,
+			"optimizeLevel": 3,
+			"shrinkLevel": 2,
+			"textFile": "wasm/mod.wat",
+			"exportRuntime": true,
+			"tsdFile": "src/types/wasm-raw.d.ts"
+		}
+	}
+}

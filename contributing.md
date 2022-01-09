@@ -2,7 +2,7 @@
 
 ## Prequisites
 
-This project uses [Node.js](https://nodejs.org) to run, so make sure you have a version compatible with the one listed in `package.json`.
+This project uses [Node.js](https://nodejs.org) to run, so make sure you have a version compatible with the one listed in `.node-version`.
 
 [Yarn](https://yarnpkg.com) is used to manage dependencies and run scripts.
 After cloning the repository you can use this command to install dependencies:
@@ -73,4 +73,4 @@ yarn run test:coverage
 ```
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/typescript-starter).
+The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/murmurhash).

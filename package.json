@@ -1,18 +1,19 @@
 {
-	"name": "typescript-starter",
-	"version": "1.0.0",
-	"private": true,
-	"description": "My personal TypeScript starter template.",
+	"name": "murmurhash-wasm",
+	"version": "0.0.0-development",
+	"description": "MurmurHash implementations in WASM",
 	"keywords": [
-		"typescript",
-		"starter"
+		"murmurhash",
+		"murmurhash3",
+		"crypto",
+		"wasm"
 	],
 	"bugs": {
-		"url": "https://github.com/jonahsnider/typescript-starter/issues"
+		"url": "https://github.com/jonahsnider/murmurhash/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jonahsnider/typescript-starter.git"
+		"url": "git+https://github.com/jonahsnider/murmurhash.git"
 	},
 	"license": "Apache-2.0",
 	"author": {
@@ -20,28 +21,59 @@
 		"email": "jonah@jonahsnider.com",
 		"url": "https://jonahsnider.com"
 	},
-	"type": "module",
-	"exports": "./tsc_output/src/index.js",
-	"main": "./tsc_output/src/index.js",
+	"type": "commonjs",
+	"exports": "./dist/src/index.js",
+	"main": "./dist/src/index.js",
+	"types": "./dist/src/index.d.ts",
+	"files": [
+		"dist",
+		"!dist/test",
+		"wasm"
+	],
 	"scripts": {
-		"build": "tsc",
+		"asbuild": "yarn asbuild:optimized",
+		"asbuild:optimized": "asc assembly/index.ts --target release",
+		"asbuild:untouched": "asc assembly/index.ts --target debug",
+		"prebuild": "rm -rf dist",
+		"build": "yarn run prebuild && tsc",
+		"docs": "typedoc",
 		"lint": "xo",
+		"release": "semantic-release",
 		"style": "prettier --check .",
-		"test": "ava",
-		"test:coverage": "c8 --reporter lcov --reporter text-summary --100 --include 'src/**/*.ts' --exclude 'src/types/**/*.ts' --all ava"
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"validate-api": "api-extractor run",
+		"validate-api:local": "api-extractor run --local --verbose"
 	},
 	"prettier": "@jonahsnider/prettier-config",
+	"dependencies": {
+		"@assemblyscript/loader": "0.19.22"
+	},
 	"devDependencies": {
+		"@babel/core": "7.16.7",
+		"@babel/preset-env": "7.16.7",
+		"@babel/preset-typescript": "7.16.7",
 		"@jonahsnider/prettier-config": "1.1.0",
 		"@jonahsnider/xo-config": "5.0.3",
+		"@microsoft/api-extractor": "7.19.4",
 		"@tsconfig/node16": "1.0.2",
-		"@types/node": "16.11.19",
-		"ava": "4.0.1",
-		"c8": "7.11.0",
+		"@types/babel__core": "^7",
+		"@types/babel__preset-env": "^7",
+		"@types/jest": "27.4.0",
+		"@types/node": "16.9.6",
+		"assemblyscript": "0.19.22",
+		"babel-jest": "27.4.6",
+		"enhanced-resolve": "5.8.3",
+		"jest": "27.4.6",
 		"prettier": "2.5.1",
+		"semantic-release": "18.0.1",
 		"ts-node": "10.4.0",
+		"typedoc": "0.22.10",
 		"typescript": "4.5.4",
 		"xo": "0.47.0"
+	},
+	"engines": {
+		"node": ">=16.9.0"
 	},
 	"packageManager": "yarn@3.1.1"
 }
