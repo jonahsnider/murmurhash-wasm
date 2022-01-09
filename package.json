@@ -29,6 +29,8 @@
 	"files": [
 		"dist",
 		"!dist/test",
+		"!dist/**/*.d.ts",
+		"dist/index.d.ts",
 		"wasm"
 	],
 	"scripts": {
