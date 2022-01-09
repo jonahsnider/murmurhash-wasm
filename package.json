@@ -22,6 +22,7 @@
 		"email": "jonah@jonahsnider.com",
 		"url": "https://jonahsnider.com"
 	},
+	"sideEffects": false,
 	"type": "commonjs",
 	"exports": "./dist/src/index.js",
 	"main": "./dist/src/index.js",
