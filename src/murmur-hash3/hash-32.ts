@@ -60,7 +60,7 @@ export function hash32(key: ArrayBufferLike, seed: number): Buffer;
 export function hash32(key: string, seed: number): Buffer;
 export function hash32(key: string | ArrayBufferLike, seed: number): Buffer {
 	if (seed < 0 || seed > UINT32_MAX_VALUE) {
-		throw new RangeError(`The value of "value" is out of range. It must be >= 0 and <= ${UINT32_MAX_VALUE}.`);
+		throw new RangeError(`The value of "seed" is out of range. It must be >= 0 and <= ${UINT32_MAX_VALUE}.`);
 	}
 
 	const keyBuffer: ArrayBufferLike = typeof key === 'string' ? stringToBuffer(key) : key;
