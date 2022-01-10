@@ -8,3 +8,14 @@ export function assertExecutionEnvironment(): void {
 		);
 	}
 }
+
+/**
+ * Convert a `string` to a `Buffer`.
+ *
+ * @param string - The string to convert to a `Buffer`
+ *
+ * @returns A `Buffer` instance containing the string
+ */
+export function stringToBuffer(string: string): Buffer {
+	return Buffer.from(string);
+}

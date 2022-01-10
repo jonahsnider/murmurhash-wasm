@@ -1,4 +1,3 @@
-import {Buffer} from 'node:buffer';
 import {Suite} from '@jonahsnider/benchmark';
 // @ts-expect-error Extra ../../ so imports work from the dist/benchmark folder
 import * as _mod from '../../../../dist/index.mjs';
@@ -13,7 +12,7 @@ const suite = new Suite('murmurhash-wasm', {
 });
 
 suite.addTest('MurmurHash3 32-bit', () => {
-	return mod.MurmurHash3.hash32(Buffer.from('hello world'), 0).toString('hex');
+	return mod.MurmurHash3.hash32('hello world', 0).toString('hex');
 });
 
 export default suite;

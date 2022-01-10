@@ -16,10 +16,14 @@ The WASM is inlined into the JS file to prevent issues from loading the module.
 
 #### 32-bit hash
 
+Hashes a provided key with a seed using the MurmurHash3 algorithm yielding a 32-bit hash.
+
+Refer to [the documentation](https://murmurhash-wasm.jonah.pw/modules/murmurhash3#hash32) for more info.
+
 ```js
 import {MurmurHash3} from 'murmurhash-wasm';
 
-const key = Buffer.from('hello');
+const key = 'hello';
 const seed = 0;
 
 const hash = MurmurHash3.hash32(key, seed);

@@ -16,6 +16,14 @@ describe('input validation', () => {
 	});
 });
 
+describe('input transformation', () => {
+	describe('key', () => {
+		it('converts string to Buffer', () => {
+			expect(MurmurHash3.hash32('hello', 0)).toStrictEqual(MurmurHash3.hash32(Buffer.from('hello'), 0));
+		});
+	});
+});
+
 // Taken from https://stackoverflow.com/a/31929528/10808983
 
 describe('empty input', () => {

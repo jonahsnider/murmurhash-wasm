@@ -9,6 +9,9 @@
 // @public
 function hash32(key: ArrayBufferLike, seed: number): Buffer;
 
+// @public
+function hash32(key: string, seed: number): Buffer;
+
 declare namespace MurmurHash3 {
     export {
         hash32
