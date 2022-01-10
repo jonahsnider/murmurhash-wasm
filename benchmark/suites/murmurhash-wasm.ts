@@ -1,7 +1,7 @@
 import {Buffer} from 'node:buffer';
 import {Suite} from '@jonahsnider/benchmark';
-// @ts-expect-error Extra ../ so imports work from the dist folder
-import * as _mod from '../../../dist/index.mjs';
+// @ts-expect-error Extra ../../ so imports work from the dist/benchmark folder
+import * as _mod from '../../../../dist/index.mjs';
 import {suiteOptions} from '../options.js';
 import type * as Mod from '../../src/index';
 

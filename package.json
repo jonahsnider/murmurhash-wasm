@@ -42,7 +42,7 @@
 		"asbuild": "yarn asbuild:optimized",
 		"asbuild:optimized": "asc assembly/index.ts --target release",
 		"asbuild:untouched": "asc assembly/index.ts --target debug",
-		"benchmarks": "node benchmark/dist/index.js",
+		"benchmarks": "node benchmark/dist/benchmark/index.js",
 		"build": "yarn run build:esm && yarn run build:cjs && yarn run build:node",
 		"build:base": "esbuild --bundle --loader:.wasm=binary --external:@assemblyscript/loader src/index.ts --sourcemap=inline",
 		"prebuild:benchmarks": "rm -rf benchmark/dist",
