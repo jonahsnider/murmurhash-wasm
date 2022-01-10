@@ -44,7 +44,7 @@
 		"asbuild:untouched": "asc assembly/index.ts --target debug",
 		"benchmarks": "node benchmark/dist/benchmark/index.js",
 		"build": "yarn run build:esm && yarn run build:cjs && yarn run build:node",
-		"build:base": "esbuild --bundle --loader:.wasm=binary --external:@assemblyscript/loader src/index.ts --sourcemap=inline",
+		"build:base": "esbuild --bundle --loader:.wasm=binary --external:buffer --external:@assemblyscript/loader src/index.ts --sourcemap=inline",
 		"prebuild:benchmarks": "rm -rf benchmark/dist",
 		"build:benchmarks": "yarn run prebuild:benchmarks && tsc --project benchmark/tsconfig.json",
 		"build:cjs": "yarn run build:base --outfile=dist/index.js --format=cjs",
@@ -63,7 +63,8 @@
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
-		"@assemblyscript/loader": "0.19.22"
+		"@assemblyscript/loader": "0.19.22",
+		"buffer": "6.0.3"
 	},
 	"devDependencies": {
 		"@babel/core": "7.16.7",

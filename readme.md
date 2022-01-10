@@ -44,15 +44,10 @@ yarn add murmurhash-wasm
 
 ### Browsers
 
-When running in the browser you will need to polyfill the `Buffer` object that Node.js provides.
+When running in the browser the global `Buffer` object will be used when available.
+If it's not defined the library will use [feross/buffer](https://github.com/feross/buffer) as a fallback ([a ponyfill](https://ponyfill.com/)).
 
-This library is compatible with [feross/buffer](https://github.com/feross/buffer), the most popular `Buffer` implementation for browsers.
-If you're using Create React App or a similar web build setup you can add the following to a polyfills file:
-
-```js
-import { Buffer as BufferPolyfill } from "buffer/";
-global.Buffer = BufferPolyfill;
-```
+The global `Buffer` will never be modified or globally polyfilled.
 
 ## Benchmarks
 

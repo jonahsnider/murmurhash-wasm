@@ -1,10 +1,8 @@
 /* eslint-disable no-bitwise */
 
 import {UINT32_MAX_VALUE} from '../constants';
-import {assertExecutionEnvironment, stringToBuffer} from '../util';
+import {BufferPonyfill, stringToBuffer} from '../util';
 import {wasm} from '../wasm';
-
-assertExecutionEnvironment();
 
 /**
  * Hashes a provided key with a seed using the MurmurHash3 algorithm yielding a 32-bit hash.
@@ -71,7 +69,7 @@ export function hash32(key: string | ArrayBufferLike, seed: number): Buffer {
 
 	const hash = wasm.hash32(keyPointer, seed);
 
-	const result = Buffer.allocUnsafe(4);
+	const result = BufferPonyfill.allocUnsafe(4);
 
 	result.writeUInt32BE(hash >>> 0);
 
