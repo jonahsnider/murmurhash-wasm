@@ -1,7 +1,10 @@
 /* eslint-disable no-bitwise */
 
 import {UINT32_MAX_VALUE} from '../constants';
+import {assertExecutionEnvironment} from '../util';
 import {wasm} from '../wasm';
+
+assertExecutionEnvironment();
 
 /**
  * Hashes a provided key with a seed using the MurmurHash3 algorithm yielding a 32-bit hash.

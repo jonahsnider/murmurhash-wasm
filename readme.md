@@ -40,7 +40,15 @@ yarn add murmurhash-wasm
 
 ### Browsers
 
-When running in the browser you will to polyfill `Buffer`.
+When running in the browser you will need to polyfill the `Buffer` object that Node.js provides.
+
+This library is compatible with [feross/buffer](https://github.com/feross/buffer), the most popular `Buffer` implementation for browsers.
+If you're using Create React App or a similar web build setup you can add the following to a polyfills file:
+
+```js
+import { Buffer as BufferPolyfill } from "buffer/";
+global.Buffer = BufferPolyfill;
+```
 
 ## Benchmarks
 
