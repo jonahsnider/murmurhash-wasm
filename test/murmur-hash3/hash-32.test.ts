@@ -3,14 +3,16 @@ import {UINT32_MAX_VALUE} from '../../src/constants';
 import {MurmurHash3} from '../../src/index';
 
 describe('input validation', () => {
-	describe('throws if value is below 0', () => {
-		expect(() => MurmurHash3.hash32(Buffer.alloc(0), -1)).toThrowError(RangeError);
-		expect(() => MurmurHash3.hash32(Buffer.alloc(0), 0)).not.toThrow();
-	});
+	describe('seed', () => {
+		it('throws if value is below 0', () => {
+			expect(() => MurmurHash3.hash32(Buffer.alloc(0), -1)).toThrowError(RangeError);
+			expect(() => MurmurHash3.hash32(Buffer.alloc(0), 0)).not.toThrow();
+		});
 
-	describe('throws if value exceeds unsigned 32-bit integer max value', () => {
-		expect(() => MurmurHash3.hash32(Buffer.alloc(0), UINT32_MAX_VALUE + 1)).toThrowError(RangeError);
-		expect(() => MurmurHash3.hash32(Buffer.alloc(0), UINT32_MAX_VALUE)).not.toThrow();
+		it('throws if value exceeds unsigned 32-bit integer max value', () => {
+			expect(() => MurmurHash3.hash32(Buffer.alloc(0), UINT32_MAX_VALUE + 1)).toThrowError(RangeError);
+			expect(() => MurmurHash3.hash32(Buffer.alloc(0), UINT32_MAX_VALUE)).not.toThrow();
+		});
 	});
 });
 
