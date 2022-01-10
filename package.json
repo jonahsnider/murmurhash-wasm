@@ -8,7 +8,9 @@
 		"crypto",
 		"wasm",
 		"hashing",
-		"hash"
+		"hash",
+		"browser",
+		"assemblyscript"
 	],
 	"homepage": "https://murmurhash-wasm.jonah.pw",
 	"bugs": {
