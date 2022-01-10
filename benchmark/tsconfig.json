@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"outDir": "./dist",
+		"module": "ESNext"
+	},
+	"extends": "@tsconfig/node16",
+	"include": [".", "../types"]
+}

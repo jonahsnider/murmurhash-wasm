@@ -1615,6 +1615,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jonahsnider/benchmark@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@jonahsnider/benchmark@npm:5.0.0"
+  dependencies:
+    "@jonahsnider/util": 8.4.2
+    tslib: 2.3.1
+  checksum: 4e8690a9c232d9b25cd68d753399ffc3662ef4e43b7471ddbb171b5582c9241d0b36291814f7222d3157e317c429b2151f7285a8d8ba69ec230079ac4b8baeda
+  languageName: node
+  linkType: hard
+
 "@jonahsnider/prettier-config@npm:1.1.0":
   version: 1.1.0
   resolution: "@jonahsnider/prettier-config@npm:1.1.0"
@@ -1622,6 +1632,13 @@ __metadata:
     "@types/prettier": 2.4.1
     prettier-config-xo: 2.0.0
   checksum: 7ff95794438cb2c7f4f794812d2933cd4f7e6958f017452f0ed4aae9ebccab25fc2fefa3a11986f7fa1cb61db2363eaecd59c2f67ac863fade63d643775ce874
+  languageName: node
+  linkType: hard
+
+"@jonahsnider/util@npm:8.4.2":
+  version: 8.4.2
+  resolution: "@jonahsnider/util@npm:8.4.2"
+  checksum: e37585d9a1625d3d26a0b104409e426ee356d40ef41a5f4503f88b8c20078b42bc45168132288b1d1d46049347f386e7465964b3c30e2a5b44401587dd15ae21
   languageName: node
   linkType: hard
 
@@ -7622,6 +7639,7 @@ __metadata:
     "@babel/core": 7.16.7
     "@babel/preset-env": 7.16.7
     "@babel/preset-typescript": 7.16.7
+    "@jonahsnider/benchmark": 5.0.0
     "@jonahsnider/prettier-config": 1.1.0
     "@jonahsnider/xo-config": 5.0.3
     "@microsoft/api-extractor": 7.19.4
@@ -9896,6 +9914,13 @@ __metadata:
     minimist: ^1.2.0
     strip-bom: ^3.0.0
   checksum: 4999ec6cd1c7cc06750a460dbc0d39fe3595a4308cb5f1d0d0a8283009cf9c0a30d5a156508c28fe3a47760508af5263ab288fc23d71e9762779674257a95d3b
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.3.1":
+  version: 2.3.1
+  resolution: "tslib@npm:2.3.1"
+  checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
   languageName: node
   linkType: hard
 

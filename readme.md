@@ -41,3 +41,23 @@ yarn add murmurhash-wasm
 ### Browsers
 
 When running in the browser you will to polyfill `Buffer`.
+
+## Benchmarks
+
+Some benchmarks for the library are available in the `benchmark/` directory of the source.
+See [`contributing.md`](contributing.md) for info on how to run them yourself.
+
+The results on my MacBook Pro (16-inch, 2019) are shown below:
+
+```text
+crypto
+--> MD5: 681,199ops/sec
+--> SHA-1: 681,663ops/sec
+murmurhash-wasm
+--> MurmurHash3 32-bit: 793,651ops/sec
+```
+
+As you can see, this library performs slightly better than the native `crypto` MD5 and SHA-1 hash function implementations.
+
+It's important to mention that the MurmurHash variants are not cryptographic hash functions like SHA-1 and MD5 were originally designed to be.
+Comparing them isn't done to say "this library is a faster alternative than MD5 and SHA-1", but rather "here's how this library compares to similar hashing solutions".

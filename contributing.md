@@ -49,9 +49,9 @@ yarn run lint --fix
 
 ## Testing
 
-AVA is used for unit testing.
+Jest is used for unit testing.
 
-Unit tests are stored in the `test/` directory mirroring the structure of the source files (ex. `src/config.ts` would have `test/config/some-function.test.ts`).
+Unit tests are stored in the `test/` directory mirroring the structure of the source files (ex. `src/config.ts` would have `test/config.test.ts`).
 You can run the tests with the `test` script:
 
 ```sh
@@ -74,3 +74,25 @@ yarn run test:coverage
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
 The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/murmurhash-wasm).
+
+## Benchmarks
+
+Benchmarks are stored in the `benchmark/` directory.
+
+You can compile them by running this command:
+
+```sh
+yarn run build:benchmarks
+```
+
+And can run them with
+
+```sh
+yarn run benchmarks
+```
+
+or
+
+```sh
+node benchmark/dist/index.js
+```
