@@ -1,5 +1,5 @@
 // eslint-disable-next-line unicorn/prefer-node-protocol
-import {Buffer as BufferShim} from 'buffer/';
+import {Buffer as BufferShim} from 'buffer/index.js';
 
 export const BufferPonyfill = typeof Buffer === 'undefined' ? (BufferShim as unknown as BufferConstructor) : Buffer;
 

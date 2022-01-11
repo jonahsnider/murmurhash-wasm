@@ -29,7 +29,11 @@
 	"sideEffects": false,
 	"type": "commonjs",
 	"exports": {
-		"node": "./dist/node.cjs",
+		"types": "./dist/index.d.ts",
+		"node": {
+			"import": "./dist/node.mjs",
+			"require": "./dist/node.cjs"
+		},
 		"import": "./dist/index.mjs",
 		"require": "./dist/index.js",
 		"default": "./dist/index.js"
@@ -51,7 +55,10 @@
 		"build:benchmarks": "yarn run prebuild:benchmarks && tsc --project benchmark/tsconfig.json",
 		"build:cjs": "yarn run build:base --outfile=dist/index.js --format=cjs",
 		"build:esm": "yarn run build:base --outfile=dist/index.mjs --format=esm",
-		"build:node": "yarn run build:base --outfile=dist/node.cjs --format=cjs --target=node16.9.0 ",
+		"build:node": "yarn run build:node:esm && yarn run build:node:cjs",
+		"build:node:base": "yarn run build:base --target=node16.9.0 ",
+		"build:node:cjs": "yarn run build:node:base --outfile=dist/node.cjs --format=cjs",
+		"build:node:esm": "yarn run build:node:base --outfile=dist/node.mjs --format=esm",
 		"docs": "typedoc",
 		"lint": "xo",
 		"release": "semantic-release",
