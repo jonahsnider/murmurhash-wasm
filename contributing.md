@@ -13,7 +13,10 @@ yarn
 
 ## Building
 
-Run the `build` script to compile the TypeScript source code into JavaScript in the `tsc_output` folder.
+1. Run `yarn run asbuild` to compile the WASM & generate typings for it
+2. Run `yarn run build` to compile and bundle the regular source code into the `dist/` folder
+3. Run `yarn run types` to generate the raw type declarations for the regular source code
+4. Run `yarn run validate-api:local` to generate the API report & bundled type declaration to the `dist/` folder
 
 ## Style
 
