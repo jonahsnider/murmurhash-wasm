@@ -56,7 +56,7 @@
 		"build:cjs": "yarn run build:base --outfile=dist/index.js --format=cjs",
 		"build:esm": "yarn run build:base --outfile=dist/index.mjs --format=esm",
 		"build:node": "yarn run build:node:esm && yarn run build:node:cjs",
-		"build:node:base": "yarn run build:base --target=node16.9.0 ",
+		"build:node:base": "yarn run build:base --target=node12.20.0 ",
 		"build:node:cjs": "yarn run build:node:base --outfile=dist/node.cjs --format=cjs",
 		"build:node:esm": "yarn run build:node:base --outfile=dist/node.mjs --format=esm",
 		"docs": "typedoc",
@@ -99,7 +99,7 @@
 		"xo": "0.47.0"
 	},
 	"engines": {
-		"node": ">=16.9.0"
+		"node": ">=12.20.0"
 	},
 	"packageManager": "yarn@3.1.1"
 }
