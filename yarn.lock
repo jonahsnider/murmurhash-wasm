@@ -2479,10 +2479,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.21":
-  version: 16.11.21
-  resolution: "@types/node@npm:16.11.21"
-  checksum: 75b679dc6375cf09bc14a2d1b344be6f3fd8ea50f212b0d60970dc9e175cef45e44c284c716eb9e766ffa52d0c83b689adb3d1911b6dd8649c560b8f77442a22
+"@types/node@npm:16.11.26":
+  version: 16.11.26
+  resolution: "@types/node@npm:16.11.26"
+  checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
   languageName: node
   linkType: hard
 
@@ -7738,7 +7738,7 @@ __metadata:
     "@microsoft/api-extractor": 7.19.4
     "@tsconfig/node16": 1.0.2
     "@types/jest": 27.4.1
-    "@types/node": 16.11.21
+    "@types/node": 16.11.26
     assemblyscript: 0.19.22
     babel-jest: 27.4.6
     buffer: 6.0.3
