@@ -86,7 +86,7 @@
 		"@tsconfig/node16": "1.0.2",
 		"@types/jest": "27.4.1",
 		"@types/node": "16.11.26",
-		"assemblyscript": "0.19.22",
+		"assemblyscript": "0.19.23",
 		"babel-jest": "27.4.6",
 		"enhanced-resolve": "5.8.3",
 		"esbuild": "0.14.13",
