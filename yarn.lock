@@ -7751,7 +7751,7 @@ __metadata:
     jest: 27.4.7
     prettier: 2.5.1
     semantic-release: 18.0.1
-    ts-node: 10.4.0
+    ts-node: 10.6.0
     typedoc: 0.22.12
     typescript: 4.6.2
     xo: 0.48.0
@@ -9964,9 +9964,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.4.0":
-  version: 10.4.0
-  resolution: "ts-node@npm:10.4.0"
+"ts-node@npm:10.6.0":
+  version: 10.6.0
+  resolution: "ts-node@npm:10.6.0"
   dependencies:
     "@cspotcode/source-map-support": 0.7.0
     "@tsconfig/node10": ^1.0.7
@@ -9979,6 +9979,7 @@ __metadata:
     create-require: ^1.1.0
     diff: ^4.0.1
     make-error: ^1.1.1
+    v8-compile-cache-lib: ^3.0.0
     yn: 3.1.1
   peerDependencies:
     "@swc/core": ">=1.2.50"
@@ -9996,7 +9997,7 @@ __metadata:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: 3933ac0a937d33c45e04a6750fcdd3e765eb2897d1da1307cd97ac52af093bcfb632ec0453a75000a65c8b5b7bdb32b1077050a186dcc556e62657cb592e6d49
+  checksum: bc7589d8c38dc75a2a6f832ac43faaac7edd3d0ef4643f46a9deeaabcdd35722e8c89e729fcd39a16069b30d09e297c2fb3eec917a82dd3f1e7da8b352bbd447
   languageName: node
   linkType: hard
 
@@ -10311,6 +10312,13 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"v8-compile-cache-lib@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "v8-compile-cache-lib@npm:3.0.0"
+  checksum: 674e312bbca796584b61dc915f33c7e7dc4e06d196e0048cb772c8964493a1ec723f1dd014d9419fd55c24a6eae148f60769da23f622e05cd13268063fa1ed6b
   languageName: node
   linkType: hard
 
