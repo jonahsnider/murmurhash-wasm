@@ -88,7 +88,7 @@
 		"@types/node": "16.11.26",
 		"assemblyscript": "0.19.23",
 		"babel-jest": "27.5.1",
-		"enhanced-resolve": "5.8.3",
+		"enhanced-resolve": "5.9.2",
 		"esbuild": "0.14.24",
 		"jest": "27.5.1",
 		"prettier": "2.5.1",
