@@ -22,21 +22,21 @@ jobs:
       - name: Build WASM
         run: yarn run asbuild
       - name: Upload compiled TypeScript
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: wasm
           path: wasm
       - name: Bundle
         run: yarn run build
       - name: Upload bundle
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist
       - name: Generate typings
         run: yarn run types
       - name: Upload typings
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: types
           path: tsc_types
@@ -59,7 +59,7 @@ jobs:
       - name: Generate docs
         run: yarn run docs
       - name: Upload compiled TypeScript
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: docs
           path: docs_out
