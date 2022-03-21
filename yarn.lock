@@ -3095,17 +3095,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assemblyscript@npm:0.19.23":
-  version: 0.19.23
-  resolution: "assemblyscript@npm:0.19.23"
+"assemblyscript@npm:0.20.0":
+  version: 0.20.0
+  resolution: "assemblyscript@npm:0.20.0"
   dependencies:
-    binaryen: 102.0.0-nightly.20211028
+    binaryen: 106.0.0-nightly.20220320
     long: ^5.2.0
-    source-map-support: ^0.5.20
   bin:
-    asc: bin/asc
-    asinit: bin/asinit
-  checksum: f5a5d808ccf5a5f5065c9690f67b74e8ab434d30c9dda688acaab92416ee296cdcae4b7a272ce1abd416e1e37e44aee61588713882c2638af037cf83c2ee933b
+    asc: bin/asc.js
+    asinit: bin/asinit.js
+  checksum: 1b6c2ee3c69f67c3ad01c413b142449621b002490652a670095a093e29c9d64cabc1da27e9715bcd8335d91c17b53ecddd79399bf72f7208cd626c360ddceb41
   languageName: node
   linkType: hard
 
@@ -3280,12 +3279,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"binaryen@npm:102.0.0-nightly.20211028":
-  version: 102.0.0-nightly.20211028
-  resolution: "binaryen@npm:102.0.0-nightly.20211028"
+"binaryen@npm:106.0.0-nightly.20220320":
+  version: 106.0.0-nightly.20220320
+  resolution: "binaryen@npm:106.0.0-nightly.20220320"
   bin:
     wasm-opt: bin/wasm-opt
-  checksum: d360de0f21e35b73e868837278161ae0d3ccca4a2f87bd02c1cf28750ab355e3469a6a56664ca078f3ed5c2baade6575871b63cc61c9f98f101e55fbbe4ff024
+    wasm2js: bin/wasm2js
+  checksum: f6a48951e5413243e9de453520c9d037538261d47b9b708a5b8ef7ec9160ab5e79c91181da0db8da7f8741452ed46160a32b98baf5a57430fc7d83f90d911b5f
   languageName: node
   linkType: hard
 
@@ -7835,7 +7835,7 @@ __metadata:
     "@tsconfig/node16": 1.0.2
     "@types/jest": 27.4.1
     "@types/node": 16.11.26
-    assemblyscript: 0.19.23
+    assemblyscript: 0.20.0
     babel-jest: 27.5.1
     buffer: 6.0.3
     enhanced-resolve: 5.9.2
@@ -9518,7 +9518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.20, source-map-support@npm:^0.5.6":
+"source-map-support@npm:^0.5.6":
   version: 0.5.21
   resolution: "source-map-support@npm:0.5.21"
   dependencies:
