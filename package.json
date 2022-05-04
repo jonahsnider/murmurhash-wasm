@@ -84,7 +84,7 @@
 		"@jonahsnider/xo-config": "5.1.0",
 		"@microsoft/api-extractor": "7.23.0",
 		"@tsconfig/node16": "1.0.2",
-		"@types/jest": "27.4.1",
+		"@types/jest": "27.5.0",
 		"@types/node": "16.11.33",
 		"assemblyscript": "0.19.23",
 		"babel-jest": "27.5.1",
