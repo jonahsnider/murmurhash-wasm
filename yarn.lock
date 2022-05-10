@@ -3231,17 +3231,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assemblyscript@npm:0.19.23":
-  version: 0.19.23
-  resolution: "assemblyscript@npm:0.19.23"
+"assemblyscript@npm:0.20.6":
+  version: 0.20.6
+  resolution: "assemblyscript@npm:0.20.6"
   dependencies:
-    binaryen: 102.0.0-nightly.20211028
+    binaryen: 106.0.0-nightly.20220320
     long: ^5.2.0
-    source-map-support: ^0.5.20
   bin:
-    asc: bin/asc
-    asinit: bin/asinit
-  checksum: f5a5d808ccf5a5f5065c9690f67b74e8ab434d30c9dda688acaab92416ee296cdcae4b7a272ce1abd416e1e37e44aee61588713882c2638af037cf83c2ee933b
+    asc: bin/asc.js
+    asinit: bin/asinit.js
+  checksum: e5bc2e28dd0a54ff80ed335435b1f54f5560ff1e7070b88e00b96d60d67cfa48408a3a24c6f732996bb3b0f30d57ce5504c08be415cc9aed24253b28578fec36
   languageName: node
   linkType: hard
 
@@ -3408,12 +3407,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"binaryen@npm:102.0.0-nightly.20211028":
-  version: 102.0.0-nightly.20211028
-  resolution: "binaryen@npm:102.0.0-nightly.20211028"
+"binaryen@npm:106.0.0-nightly.20220320":
+  version: 106.0.0-nightly.20220320
+  resolution: "binaryen@npm:106.0.0-nightly.20220320"
   bin:
     wasm-opt: bin/wasm-opt
-  checksum: d360de0f21e35b73e868837278161ae0d3ccca4a2f87bd02c1cf28750ab355e3469a6a56664ca078f3ed5c2baade6575871b63cc61c9f98f101e55fbbe4ff024
+    wasm2js: bin/wasm2js
+  checksum: f6a48951e5413243e9de453520c9d037538261d47b9b708a5b8ef7ec9160ab5e79c91181da0db8da7f8741452ed46160a32b98baf5a57430fc7d83f90d911b5f
   languageName: node
   linkType: hard
 
@@ -7807,7 +7807,7 @@ __metadata:
     "@tsconfig/node16": 1.0.2
     "@types/jest": 27.5.0
     "@types/node": 16.11.33
-    assemblyscript: 0.19.23
+    assemblyscript: 0.20.6
     babel-jest: 28.1.0
     buffer: 6.0.3
     enhanced-resolve: 5.9.3
@@ -9479,16 +9479,6 @@ __metadata:
     buffer-from: ^1.0.0
     source-map: ^0.6.0
   checksum: 933550047b6c1a2328599a21d8b7666507427c0f5ef5eaadd56b5da0fd9505e239053c66fe181bf1df469a3b7af9d775778eee283cbb7ae16b902ddc09e93a97
-  languageName: node
-  linkType: hard
-
-"source-map-support@npm:^0.5.20":
-  version: 0.5.21
-  resolution: "source-map-support@npm:0.5.21"
-  dependencies:
-    buffer-from: ^1.0.0
-    source-map: ^0.6.0
-  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
   languageName: node
   linkType: hard
 
