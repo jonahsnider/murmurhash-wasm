@@ -2129,9 +2129,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@npm:7.23.2":
-  version: 7.23.2
-  resolution: "@microsoft/api-extractor@npm:7.23.2"
+"@microsoft/api-extractor@npm:7.24.1":
+  version: 7.24.1
+  resolution: "@microsoft/api-extractor@npm:7.24.1"
   dependencies:
     "@microsoft/api-extractor-model": 7.17.3
     "@microsoft/tsdoc": 0.14.1
@@ -2147,7 +2147,7 @@ __metadata:
     typescript: ~4.6.3
   bin:
     api-extractor: bin/api-extractor
-  checksum: 5fb159374dababed2f15155b2fb7c0dca0d7142eb5e2cc56e3e8e8d1469028cfb1779c50a1583e53e90694d67cb14ee60832c8711a7bddf76617de5b10ef683d
+  checksum: b615783f6248c0d95931c1a0272860358a9618b9a1bff7959e7c5a242799eec7efc2b87db460bf2a3ae967da793dd457ac90570b60810fe9f094ca84b0deabe3
   languageName: node
   linkType: hard
 
@@ -8003,7 +8003,7 @@ __metadata:
     "@jonahsnider/benchmark": 5.0.0
     "@jonahsnider/prettier-config": 1.1.1
     "@jonahsnider/xo-config": 5.1.0
-    "@microsoft/api-extractor": 7.23.2
+    "@microsoft/api-extractor": 7.24.1
     "@tsconfig/node16": 1.0.2
     "@types/jest": 27.5.1
     "@types/node": 16.11.36
