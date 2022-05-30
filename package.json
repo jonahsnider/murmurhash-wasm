@@ -89,7 +89,7 @@
 		"assemblyscript": "0.19.23",
 		"babel-jest": "28.1.0",
 		"enhanced-resolve": "5.9.3",
-		"esbuild": "0.14.41",
+		"esbuild": "0.14.42",
 		"jest": "28.1.0",
 		"prettier": "2.6.2",
 		"semantic-release": "18.0.1",
