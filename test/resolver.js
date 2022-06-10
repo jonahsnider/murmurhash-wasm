@@ -13,6 +13,7 @@ const requireResolver = require('enhanced-resolve').create.sync({
 
 module.exports = function (request, options) {
 	let resolver = requireResolver;
+	// eslint-disable-next-line n/no-unsupported-features/es-syntax
 	if (options.conditions?.includes('import')) {
 		resolver = importResolver;
 	}
