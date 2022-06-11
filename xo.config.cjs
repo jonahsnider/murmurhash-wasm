@@ -41,7 +41,7 @@ config.overrides.push(
 			'unicorn/prefer-export-from': 'off',
 
 			// Browser support
-			'node/prefer-global/buffer': 'off',
+			'n/prefer-global/buffer': 'off',
 		},
 	},
 );
