@@ -14,10 +14,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@assemblyscript/loader@npm:0.20.13":
-  version: 0.20.13
-  resolution: "@assemblyscript/loader@npm:0.20.13"
-  checksum: fc726908b62149bd3a1c906ea904d8a2b0118452e54ad13ccfbee8d90406278748f28ffa207f070e62e0cc3f7a8af677f12058e4afa17b0408c99e3b0108a33f
+"@assemblyscript/loader@npm:0.20.14":
+  version: 0.20.14
+  resolution: "@assemblyscript/loader@npm:0.20.14"
+  checksum: a0bbf2fa9fc0be1f863bb3285efa64c663ac453bee14980e42506f24a0e72122e3cf9ff5d15651dc7384cbd7d153013a2d6702fbb3b88f000e17eff510bbd3c9
   languageName: node
   linkType: hard
 
@@ -8330,7 +8330,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "murmurhash-wasm@workspace:."
   dependencies:
-    "@assemblyscript/loader": 0.20.13
+    "@assemblyscript/loader": 0.20.14
     "@babel/core": 7.18.9
     "@babel/preset-env": 7.18.9
     "@babel/preset-typescript": 7.18.6
