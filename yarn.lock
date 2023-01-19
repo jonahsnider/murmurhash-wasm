@@ -2990,9 +2990,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@npm:7.33.7":
-  version: 7.33.7
-  resolution: "@microsoft/api-extractor@npm:7.33.7"
+"@microsoft/api-extractor@npm:7.33.8":
+  version: 7.33.8
+  resolution: "@microsoft/api-extractor@npm:7.33.8"
   dependencies:
     "@microsoft/api-extractor-model": 7.25.3
     "@microsoft/tsdoc": 0.14.2
@@ -3002,13 +3002,13 @@ __metadata:
     "@rushstack/ts-command-line": 4.13.1
     colors: ~1.2.1
     lodash: ~4.17.15
-    resolve: ~1.17.0
+    resolve: ~1.22.1
     semver: ~7.3.0
     source-map: ~0.6.1
     typescript: ~4.8.4
   bin:
     api-extractor: bin/api-extractor
-  checksum: 3f9034ca8e7bc7a6622cb8ac1f53f7f265ebca529e17f4abb2bef0ca297011cfa0927c0703a819607d974ca79b8f5307371491cfb192788e723cfd316250f9a6
+  checksum: 977f0938ef31e5c76a433245150802fd1f98b755124d3718d44c5806baba5c4b52955ece66a227c611088fa688339649b7d4e73fff721cb8210d3af0284e2680
   languageName: node
   linkType: hard
 
@@ -9031,7 +9031,7 @@ __metadata:
     "@jonahsnider/benchmark": 5.0.0
     "@jonahsnider/prettier-config": 1.1.2
     "@jonahsnider/xo-config": 5.1.0
-    "@microsoft/api-extractor": 7.33.7
+    "@microsoft/api-extractor": 7.33.8
     "@tsconfig/node16": 1.0.3
     "@types/jest": 29.2.6
     "@types/node": 18.11.18
@@ -10522,6 +10522,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"resolve@npm:~1.22.1":
+  version: 1.22.1
+  resolution: "resolve@npm:1.22.1"
+  dependencies:
+    is-core-module: ^2.9.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: 07af5fc1e81aa1d866cbc9e9460fbb67318a10fa3c4deadc35c3ad8a898ee9a71a86a65e4755ac3195e0ea0cfbe201eb323ebe655ce90526fd61917313a34e4e
+  languageName: node
+  linkType: hard
+
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
   version: 1.21.0
   resolution: "resolve@patch:resolve@npm%3A1.21.0#~builtin<compat/resolve>::version=1.21.0&hash=c3c19d"
@@ -10564,6 +10577,19 @@ __metadata:
     is-core-module: ^2.1.0
     path-parse: ^1.0.6
   checksum: 2443b94d347e6946c87c85faf13071f605e609e0b54784829b0ed2b917d050bfc1cbaf4ecc6453f224cfa7d0c5dcd97cbb273454cd210bee68e4af15c1a5abc9
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@~1.22.1#~builtin<compat/resolve>":
+  version: 1.22.1
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  dependencies:
+    is-core-module: ^2.9.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: 5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
