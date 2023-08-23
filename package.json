@@ -83,7 +83,7 @@
 		"@jonahsnider/prettier-config": "1.1.2",
 		"@jonahsnider/xo-config": "5.1.0",
 		"@microsoft/api-extractor": "7.36.4",
-		"@tsconfig/node16": "1.0.4",
+		"@tsconfig/node16": "16.1.1",
 		"@types/jest": "29.5.4",
 		"@types/node": "18.17.7",
 		"assemblyscript": "0.19.23",
