@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"moduleResolution": "node",
 		"outDir": "./tsc_types",
 		"emitDeclarationOnly": true
 	},
