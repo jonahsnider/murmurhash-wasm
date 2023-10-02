@@ -72,7 +72,7 @@
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
-		"@assemblyscript/loader": "0.27.10",
+		"@assemblyscript/loader": "0.27.11",
 		"buffer": "6.0.3"
 	},
 	"devDependencies": {
