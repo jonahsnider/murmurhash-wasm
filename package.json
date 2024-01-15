@@ -85,7 +85,7 @@
 		"@microsoft/api-extractor": "7.39.1",
 		"@tsconfig/node16": "16.1.1",
 		"@types/jest": "29.5.11",
-		"@types/node": "20.11.1",
+		"@types/node": "20.11.2",
 		"assemblyscript": "0.19.23",
 		"babel-jest": "29.7.0",
 		"enhanced-resolve": "5.15.0",
