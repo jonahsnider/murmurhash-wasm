@@ -76,8 +76,8 @@
 		"buffer": "6.0.3"
 	},
 	"devDependencies": {
-		"@babel/core": "7.23.9",
-		"@babel/preset-env": "7.23.9",
+		"@babel/core": "7.24.0",
+		"@babel/preset-env": "7.24.0",
 		"@babel/preset-typescript": "7.23.3",
 		"@jonahsnider/benchmark": "5.0.0",
 		"@jonahsnider/prettier-config": "1.1.2",
