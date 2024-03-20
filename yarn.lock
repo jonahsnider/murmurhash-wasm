@@ -4415,17 +4415,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assemblyscript@npm:0.19.23":
-  version: 0.19.23
-  resolution: "assemblyscript@npm:0.19.23"
+"assemblyscript@npm:0.27.25":
+  version: 0.27.25
+  resolution: "assemblyscript@npm:0.27.25"
   dependencies:
-    binaryen: 102.0.0-nightly.20211028
-    long: ^5.2.0
-    source-map-support: ^0.5.20
+    binaryen: 116.0.0-nightly.20240114
+    long: ^5.2.1
   bin:
-    asc: bin/asc
-    asinit: bin/asinit
-  checksum: f5a5d808ccf5a5f5065c9690f67b74e8ab434d30c9dda688acaab92416ee296cdcae4b7a272ce1abd416e1e37e44aee61588713882c2638af037cf83c2ee933b
+    asc: bin/asc.js
+    asinit: bin/asinit.js
+  checksum: ecbe87aa60b5a654d8523a74b1cfb8cf8c2093e19a321453a5404a1c6e7562d8d2829d4fa8139e9219eee11e1ba95c6fb7b7490ccc7cc35bc8128a5fb7f10fa6
   languageName: node
   linkType: hard
 
@@ -4581,12 +4580,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"binaryen@npm:102.0.0-nightly.20211028":
-  version: 102.0.0-nightly.20211028
-  resolution: "binaryen@npm:102.0.0-nightly.20211028"
+"binaryen@npm:116.0.0-nightly.20240114":
+  version: 116.0.0-nightly.20240114
+  resolution: "binaryen@npm:116.0.0-nightly.20240114"
   bin:
     wasm-opt: bin/wasm-opt
-  checksum: d360de0f21e35b73e868837278161ae0d3ccca4a2f87bd02c1cf28750ab355e3469a6a56664ca078f3ed5c2baade6575871b63cc61c9f98f101e55fbbe4ff024
+    wasm2js: bin/wasm2js
+  checksum: 77b281347f25a84ba619abd4bd67a84cf761abef7da4d8b3c7a7937272527a95199b7aa2b45c2c127b9e356bde9d7a2521a02226060df9d01c51f0b42c4ff27c
   languageName: node
   linkType: hard
 
@@ -9035,10 +9035,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"long@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "long@npm:5.2.0"
-  checksum: 37aa4e67b9c3eebc6d9d675adcc9d06f06059ca268922a71273de389746bf07f0ff282f9e604d17fdf84c4149099b44e936ea2b621a6c4759a216621afa97efd
+"long@npm:^5.2.1":
+  version: 5.2.3
+  resolution: "long@npm:5.2.3"
+  checksum: 885ede7c3de4facccbd2cacc6168bae3a02c3e836159ea4252c87b6e34d40af819824b2d4edce330bfb5c4d6e8ce3ec5864bdcf9473fa1f53a4f8225860e5897
   languageName: node
   linkType: hard
 
@@ -9604,7 +9604,7 @@ __metadata:
     "@tsconfig/node16": 16.1.1
     "@types/jest": 29.5.12
     "@types/node": 20.11.30
-    assemblyscript: 0.19.23
+    assemblyscript: 0.27.25
     babel-jest: 29.7.0
     buffer: 6.0.3
     enhanced-resolve: 5.16.0
@@ -11594,16 +11594,6 @@ __metadata:
     buffer-from: ^1.0.0
     source-map: ^0.6.0
   checksum: 933550047b6c1a2328599a21d8b7666507427c0f5ef5eaadd56b5da0fd9505e239053c66fe181bf1df469a3b7af9d775778eee283cbb7ae16b902ddc09e93a97
-  languageName: node
-  linkType: hard
-
-"source-map-support@npm:^0.5.20":
-  version: 0.5.21
-  resolution: "source-map-support@npm:0.5.21"
-  dependencies:
-    buffer-from: ^1.0.0
-    source-map: ^0.6.0
-  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
   languageName: node
   linkType: hard
 
