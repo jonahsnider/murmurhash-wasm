@@ -2751,13 +2751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/benchmark@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@jonahsnider/benchmark@npm:5.0.0"
+"@jonahsnider/benchmark@npm:5.0.3":
+  version: 5.0.3
+  resolution: "@jonahsnider/benchmark@npm:5.0.3"
   dependencies:
-    "@jonahsnider/util": 8.4.2
-    tslib: 2.3.1
-  checksum: 4e8690a9c232d9b25cd68d753399ffc3662ef4e43b7471ddbb171b5582c9241d0b36291814f7222d3157e317c429b2151f7285a8d8ba69ec230079ac4b8baeda
+    "@jonahsnider/util": 10.3.0
+    tslib: 2.6.2
+  checksum: 7ce3018b483203e1bec378dc69c2f984dc53a2c2f9b6254e172081b1c15f052bc024b7ab60fbadad8fd29043a1287f9552ac980fc0fdcfe1bf8a0df1e8dc5894
   languageName: node
   linkType: hard
 
@@ -2771,10 +2771,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/util@npm:8.4.2":
-  version: 8.4.2
-  resolution: "@jonahsnider/util@npm:8.4.2"
-  checksum: e37585d9a1625d3d26a0b104409e426ee356d40ef41a5f4503f88b8c20078b42bc45168132288b1d1d46049347f386e7465964b3c30e2a5b44401587dd15ae21
+"@jonahsnider/util@npm:10.3.0":
+  version: 10.3.0
+  resolution: "@jonahsnider/util@npm:10.3.0"
+  checksum: 8bf54ae0b4006c5834f861b4dd7e1f650dec97422b42640379c7d55198cf1d2486314b173c305e746b3ee19a5629593b43fa5c3d8d2a4a11f09a0e4acec4061d
   languageName: node
   linkType: hard
 
@@ -9597,7 +9597,7 @@ __metadata:
     "@babel/core": 7.24.3
     "@babel/preset-env": 7.24.3
     "@babel/preset-typescript": 7.24.1
-    "@jonahsnider/benchmark": 5.0.0
+    "@jonahsnider/benchmark": 5.0.3
     "@jonahsnider/prettier-config": 1.1.2
     "@jonahsnider/xo-config": 5.3.0
     "@microsoft/api-extractor": 7.43.0
@@ -12161,10 +12161,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.3.1":
-  version: 2.3.1
-  resolution: "tslib@npm:2.3.1"
-  checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
+"tslib@npm:2.6.2":
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
   languageName: node
   linkType: hard
 
