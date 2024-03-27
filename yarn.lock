@@ -3759,10 +3759,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node16@npm:16.1.1":
-  version: 16.1.1
-  resolution: "@tsconfig/node16@npm:16.1.1"
-  checksum: 26d83db06866083b543e73eda33585464362fd0835229b9a5b1185f0353b9b5db9ca4f66a4be53d4ec5d4c219be42b0a7582f8bcc7268f2f77b1c643375e490f
+"@tsconfig/node16@npm:16.1.3":
+  version: 16.1.3
+  resolution: "@tsconfig/node16@npm:16.1.3"
+  checksum: 097f33cb7fe9577cc3c4b7a8d26c7e8b6c45c868d3bda1e2cd120111693b98f88a5138e643e7a6f79d53d94717c3624dc33398804647bf6e0e8782604bbfad53
   languageName: node
   linkType: hard
 
@@ -9986,7 +9986,7 @@ __metadata:
     "@jonahsnider/prettier-config": 1.1.2
     "@jonahsnider/xo-config": 5.3.0
     "@microsoft/api-extractor": 7.43.0
-    "@tsconfig/node16": 16.1.1
+    "@tsconfig/node16": 16.1.3
     "@types/jest": 29.5.12
     "@types/node": 20.11.30
     assemblyscript: 0.27.25
@@ -12662,14 +12662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.6.2":
-  version: 2.6.2
-  resolution: "tslib@npm:2.6.2"
-  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.6.2":
+"tslib@npm:2.6.2, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
