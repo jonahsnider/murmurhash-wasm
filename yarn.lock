@@ -4656,16 +4656,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assemblyscript@npm:0.27.25":
-  version: 0.27.25
-  resolution: "assemblyscript@npm:0.27.25"
+"assemblyscript@npm:0.27.27":
+  version: 0.27.27
+  resolution: "assemblyscript@npm:0.27.27"
   dependencies:
     binaryen: 116.0.0-nightly.20240114
     long: ^5.2.1
   bin:
     asc: bin/asc.js
     asinit: bin/asinit.js
-  checksum: ecbe87aa60b5a654d8523a74b1cfb8cf8c2093e19a321453a5404a1c6e7562d8d2829d4fa8139e9219eee11e1ba95c6fb7b7490ccc7cc35bc8128a5fb7f10fa6
+  checksum: 08fb39a3046ec88651432d01b51e646a30ac8fa8f23d449010e6b001088b1512571e237ae985c0eb4538c3e3731a4b960bd7e9c35ee147ee53d401949e7bd3e9
   languageName: node
   linkType: hard
 
@@ -10095,7 +10095,7 @@ __metadata:
     "@tsconfig/node16": 16.1.3
     "@types/jest": 29.5.12
     "@types/node": 20.12.8
-    assemblyscript: 0.27.25
+    assemblyscript: 0.27.27
     babel-jest: 29.7.0
     buffer: 6.0.3
     enhanced-resolve: 5.16.0
