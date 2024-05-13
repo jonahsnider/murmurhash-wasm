@@ -3088,28 +3088,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor-model@npm:7.28.14":
-  version: 7.28.14
-  resolution: "@microsoft/api-extractor-model@npm:7.28.14"
+"@microsoft/api-extractor-model@npm:7.28.16":
+  version: 7.28.16
+  resolution: "@microsoft/api-extractor-model@npm:7.28.16"
   dependencies:
     "@microsoft/tsdoc": 0.14.2
     "@microsoft/tsdoc-config": ~0.16.1
-    "@rushstack/node-core-library": 4.1.0
-  checksum: b1287174a64c794a89b3685d5808866dda4479af1a8f7adadfa2e9ef6813f4f9216d7629fd5e804d9560b8cd65a8437a153286db75a5fbb79bda82cea5d8ad73
+    "@rushstack/node-core-library": 4.2.1
+  checksum: c6366eba2aabeb690bd8e0507e3e50f61c2900987ebd3e673e22c713c1a636656710da26a5df60bc45bd6dc06965a31615c0f52c9916b37495977de0ac281346
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@npm:7.43.1":
-  version: 7.43.1
-  resolution: "@microsoft/api-extractor@npm:7.43.1"
+"@microsoft/api-extractor@npm:7.43.4":
+  version: 7.43.4
+  resolution: "@microsoft/api-extractor@npm:7.43.4"
   dependencies:
-    "@microsoft/api-extractor-model": 7.28.14
+    "@microsoft/api-extractor-model": 7.28.16
     "@microsoft/tsdoc": 0.14.2
     "@microsoft/tsdoc-config": ~0.16.1
-    "@rushstack/node-core-library": 4.1.0
+    "@rushstack/node-core-library": 4.2.1
     "@rushstack/rig-package": 0.5.2
-    "@rushstack/terminal": 0.10.1
-    "@rushstack/ts-command-line": 4.19.2
+    "@rushstack/terminal": 0.10.3
+    "@rushstack/ts-command-line": 4.19.5
     lodash: ~4.17.15
     minimatch: ~3.0.3
     resolve: ~1.22.1
@@ -3118,7 +3118,7 @@ __metadata:
     typescript: 5.4.2
   bin:
     api-extractor: bin/api-extractor
-  checksum: 878648f83c6c10f0cf34915ec1d7554fff64434d44a18e921351f0c06ce7c2326359b8659db48ae358512eb2f8c113228d38bf0abe3fa4f5273aa692f6efafbe
+  checksum: fdd039daef4801b6ab829ac341569848a472e50923611226eaca78cbfca74cb82f8480d453e8daf09657529e13787bce3a65c1e97a62646f3061beadb8055c22
   languageName: node
   linkType: hard
 
@@ -3598,9 +3598,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@rushstack/node-core-library@npm:4.1.0"
+"@rushstack/node-core-library@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@rushstack/node-core-library@npm:4.2.1"
   dependencies:
     fs-extra: ~7.0.1
     import-lazy: ~4.0.0
@@ -3613,7 +3613,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: b7b9168eaa2ea0255da9d8cca8f512bd0753c18b7fc74953426238ffe56262c253b19e2c5fb60b3304495412d3165536d4769a04439a120d918e08dbf82cb729
+  checksum: 2481a19c2499257f86c6c46de8a0b45cdefbc6a557ff4d20b3454cd6f75db9458729201cdb540a67a68c68674f903fe9f8df5c3ed8206e8cdd59e7a87909270e
   languageName: node
   linkType: hard
 
@@ -3627,30 +3627,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/terminal@npm:0.10.1":
-  version: 0.10.1
-  resolution: "@rushstack/terminal@npm:0.10.1"
+"@rushstack/terminal@npm:0.10.3":
+  version: 0.10.3
+  resolution: "@rushstack/terminal@npm:0.10.3"
   dependencies:
-    "@rushstack/node-core-library": 4.1.0
+    "@rushstack/node-core-library": 4.2.1
     supports-color: ~8.1.1
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 811ab18db9da8e0639335b5d151c4b267d6bb7e54b33b140d9624fe17380523ae9a948f04fac756a50a49d64123f4a998f24f8dc739a555e782f85be978cdea1
+  checksum: fe5316ec9cc00f4e3f7df049bf69a2ae19ef46be087258a0d2db7146ab0a3aa0f9db9728ff321f0e77b112f2539b615b1d3af5d710f619adc83ab6a5440bbaa5
   languageName: node
   linkType: hard
 
-"@rushstack/ts-command-line@npm:4.19.2":
-  version: 4.19.2
-  resolution: "@rushstack/ts-command-line@npm:4.19.2"
+"@rushstack/ts-command-line@npm:4.19.5":
+  version: 4.19.5
+  resolution: "@rushstack/ts-command-line@npm:4.19.5"
   dependencies:
-    "@rushstack/terminal": 0.10.1
+    "@rushstack/terminal": 0.10.3
     "@types/argparse": 1.0.38
     argparse: ~1.0.9
     string-argv: ~0.3.1
-  checksum: 3fe921866524152f210ea3113b0997368210d0c4ba9bde08905f14f185e1b4855516b5710842e55a241f9ffdd1397edc29d91a17c112987ed5fb4bc43ef6b979
+  checksum: 476d286a1c035c53ee1b801c371ae0400c4918ff1df55e14535ad26aa7c859a5f989cf494e237453ba4caf275b1cb83e2d3ce414b64662b8b85fddc04384ae19
   languageName: node
   linkType: hard
 
@@ -10091,7 +10091,7 @@ __metadata:
     "@jonahsnider/benchmark": 5.0.3
     "@jonahsnider/prettier-config": 1.1.2
     "@jonahsnider/xo-config": 5.3.0
-    "@microsoft/api-extractor": 7.43.1
+    "@microsoft/api-extractor": 7.43.4
     "@tsconfig/node16": 16.1.3
     "@types/jest": 29.5.12
     "@types/node": 20.12.8
