@@ -3768,12 +3768,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.14.8":
-  version: 20.14.8
-  resolution: "@types/node@npm:20.14.8"
+"@types/node@npm:20.14.10":
+  version: 20.14.10
+  resolution: "@types/node@npm:20.14.10"
   dependencies:
     undici-types: ~5.26.4
-  checksum: a9128840005d4a0aba68826e22ac0fdd86bb9073f1d274217d3509b52f969d1aab83415c85a8461259f33cf34f9eee02fb13dca059865bed2ba2e728bc936a76
+  checksum: 2f397d393de8cddb126e0b7999402ea450215ac69d49666ddef4f730a73325054499ce7345f86095e7b935c55b2e02139f3b8b9afc72fb978ed29edf6bb956b0
   languageName: node
   linkType: hard
 
@@ -9899,7 +9899,7 @@ __metadata:
     "@microsoft/api-extractor": 7.47.0
     "@tsconfig/node16": 16.1.3
     "@types/jest": 29.5.12
-    "@types/node": 20.14.8
+    "@types/node": 20.14.10
     assemblyscript: 0.27.28
     babel-jest: 29.7.0
     buffer: 6.0.3
