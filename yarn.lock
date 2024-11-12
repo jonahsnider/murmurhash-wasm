@@ -31,10 +31,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@assemblyscript/loader@npm:0.27.30":
-  version: 0.27.30
-  resolution: "@assemblyscript/loader@npm:0.27.30"
-  checksum: 81c9bbcd022c88d6840590054cf805679c4d2f846826d0a28832e4449bbe623169a5070e946d8469a2c890a15e7b9b5361e168f061323ff2517c4114964d5c9e
+"@assemblyscript/loader@npm:0.27.31":
+  version: 0.27.31
+  resolution: "@assemblyscript/loader@npm:0.27.31"
+  checksum: b52e4b72cfeb0571279f54eb2ef8e2dbcd9274c58145e3817f73ae3ab2486850534e86485df3f01fd9d434023736051c738e82757313fbdba2a3fb50ee7a759a
   languageName: node
   linkType: hard
 
@@ -4524,16 +4524,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assemblyscript@npm:0.27.30":
-  version: 0.27.30
-  resolution: "assemblyscript@npm:0.27.30"
+"assemblyscript@npm:0.27.31":
+  version: 0.27.31
+  resolution: "assemblyscript@npm:0.27.31"
   dependencies:
     binaryen: 116.0.0-nightly.20240114
     long: ^5.2.1
   bin:
     asc: bin/asc.js
     asinit: bin/asinit.js
-  checksum: d08624c207e419dfefbfd78cb2c63edc97a5e9c24d94a2fde740906fd2b96432816ce7ba02592ca771f10271aa15b3cc9b6ddeb92bebf0b56dbedec243511808
+  checksum: 2cf42ffea525aba1ad1eb0964e1eea2ed131ce7ac0421966b3f601475f0cfa8be4911dacba62d42c6d8949ac74192a465020eb080271ec9e9a3a424a62e27197
   languageName: node
   linkType: hard
 
@@ -10214,7 +10214,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "murmurhash-wasm@workspace:."
   dependencies:
-    "@assemblyscript/loader": 0.27.30
+    "@assemblyscript/loader": 0.27.31
     "@babel/core": 7.26.0
     "@babel/preset-env": 7.26.0
     "@babel/preset-typescript": 7.26.0
@@ -10225,7 +10225,7 @@ __metadata:
     "@tsconfig/node16": 16.1.3
     "@types/jest": 29.5.14
     "@types/node": 20.17.6
-    assemblyscript: 0.27.30
+    assemblyscript: 0.27.31
     babel-jest: 29.7.0
     buffer: 6.0.3
     enhanced-resolve: 5.17.1
