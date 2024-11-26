@@ -10231,7 +10231,7 @@ __metadata:
     enhanced-resolve: 5.17.1
     esbuild: 0.24.0
     jest: 29.7.0
-    prettier: 3.3.3
+    prettier: 3.4.0
     semantic-release: 22.0.12
     ts-node: 10.9.2
     typedoc: 0.26.11
@@ -11274,7 +11274,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.3.3, prettier@npm:^3.3.3":
+"prettier@npm:3.4.0":
+  version: 3.4.0
+  resolution: "prettier@npm:3.4.0"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 600896ad0250afbcb4be97b41a2d72b878729d85308cbb6a6a8e668de8c3795559e2731b3fbb7f1d9bb5c76161a4110fd6f898d20af739853923336e55cb609a
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.3.3":
   version: 3.3.3
   resolution: "prettier@npm:3.3.3"
   bin:
