@@ -10067,7 +10067,7 @@ __metadata:
     prettier: 3.4.2
     semantic-release: 22.0.12
     ts-node: 10.9.2
-    typedoc: 0.27.3
+    typedoc: 0.27.4
     typescript: 4.9.5
     xo: 0.60.0
   languageName: unknown
@@ -12960,9 +12960,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc@npm:0.27.3":
-  version: 0.27.3
-  resolution: "typedoc@npm:0.27.3"
+"typedoc@npm:0.27.4":
+  version: 0.27.4
+  resolution: "typedoc@npm:0.27.4"
   dependencies:
     "@gerrit0/mini-shiki": ^1.24.0
     lunr: ^2.3.9
@@ -12973,7 +12973,7 @@ __metadata:
     typescript: 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x || 5.6.x || 5.7.x
   bin:
     typedoc: bin/typedoc
-  checksum: 4c57e5737d13ee6f2b457b7e268d54e757301dacae2eb349a2c41ce9a3cbb821ae295c988b763199d0b7a37ab5db867d46437b47dc6b7cccb8b483a6d667764b
+  checksum: d95fce13f35394eef23cefa37cd70901415e85fc9f6ebffc7d4682ad9c9f1125074305d856849c9b631782144f977a4818e6ab77236c86dce3643a5a621d92c5
   languageName: node
   linkType: hard
 
