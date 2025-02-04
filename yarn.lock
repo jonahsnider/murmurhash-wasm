@@ -5855,13 +5855,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:5.18.0":
-  version: 5.18.0
-  resolution: "enhanced-resolve@npm:5.18.0"
+"enhanced-resolve@npm:5.18.1":
+  version: 5.18.1
+  resolution: "enhanced-resolve@npm:5.18.1"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 77c6b11f0d19f21f52214e5a2c0dfb7070decb4045572f44be4cacf92b4be5e2c1d9a4c044a226d1003ca9daf9b71d498d256e7520ff5060f23d0284f814d392
+  checksum: de5bea7debe3576e78173bcc409c4aee7fcb56580c602d5c47c533b92952e55d7da3d9f53b864846ba62c8bd3efb0f9ecfe5f865e57de2f3e9b6e5cda03b4e7e
   languageName: node
   linkType: hard
 
@@ -10105,7 +10105,7 @@ __metadata:
     assemblyscript: 0.27.32
     babel-jest: 29.7.0
     buffer: 6.0.3
-    enhanced-resolve: 5.18.0
+    enhanced-resolve: 5.18.1
     esbuild: 0.24.2
     jest: 29.7.0
     prettier: 3.4.2
